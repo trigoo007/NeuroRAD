@@ -44,7 +44,7 @@ struct ExplorerView: View {
                 }
                 
                 // Lista de estructuras
-                estructurasList()
+                estructurasList
                     .animation(.default, value: sistemaSeleccionado)
                     .animation(.default, value: categoriaSeleccionada)
                     .animation(.default, value: busqueda)
@@ -77,7 +77,7 @@ struct ExplorerView: View {
     
     // Lista de estructuras filtradas
     @ViewBuilder
-    private func estructurasList() -> some View {
+    private var estructurasList: some View {
         let estructuras = estructurasFiltradas()
         
         if estructuras.isEmpty {
@@ -90,15 +90,16 @@ struct ExplorerView: View {
                     }
                 }
             }
-            .listStyle(InsetGroupedListStyle())
+            #if os(macOS)
+            .listStyle(DefaultListStyle())
+            #else
+            .listStyle(InsetListStyle())
+            #endif
         }
     }
     
     // Obtiene las categorías disponibles para un sistema
     private func obtenerCategorias(para sistema: SistemaNeurologico) -> [CategoriaAnatomica] {
-        // Esta función obtiene las categorías por sistema desde el dataManager
-        // o desde una lista predefinida
-        
         var categoriasDelSistema: [CategoriaAnatomica] = []
         
         switch sistema {
@@ -186,7 +187,11 @@ struct SearchBar: View {
             }
         }
         .padding(8)
+        #if os(macOS)
+        .background(Color(NSColor.controlBackgroundColor))
+        #else
         .background(Color(.systemGray6))
+        #endif
         .cornerRadius(10)
     }
 }
@@ -206,7 +211,11 @@ struct SistemaButton: View {
             }
             .padding()
             .frame(width: 90, height: 90)
+            #if os(macOS)
+            .background(isSelected ? Color.blue.opacity(0.2) : Color(NSColor.controlBackgroundColor))
+            #else
             .background(isSelected ? Color.blue.opacity(0.2) : Color(.systemGray6))
+            #endif
             .foregroundColor(isSelected ? .blue : .primary)
             .cornerRadius(12)
         }
@@ -241,7 +250,11 @@ struct CategoriaChip: View {
             Text(categoria.nombre)
                 .padding(.horizontal, 12)
                 .padding(.vertical, 6)
+                #if os(macOS)
+                .background(isSelected ? Color.blue : Color(NSColor.controlBackgroundColor))
+                #else
                 .background(isSelected ? Color.blue : Color(.systemGray5))
+                #endif
                 .foregroundColor(isSelected ? .white : .primary)
                 .cornerRadius(15)
         }
@@ -288,7 +301,11 @@ struct EmptyResultsView: View {
         }
         .padding()
         .frame(maxWidth: .infinity, maxHeight: .infinity)
+        #if os(macOS)
+        .background(Color(NSColor.windowBackgroundColor))
+        #else
         .background(Color(.systemBackground))
+        #endif
     }
 }
 

@@ -102,6 +102,15 @@ struct EstudioView: View {
             }
             .navigationTitle("Estudio Neuroanatómico")
             .toolbar {
+                #if os(macOS)
+                ToolbarItem {
+                    Button(action: {
+                        estudioManager.reiniciarSesion()
+                    }) {
+                        Label("Reiniciar", systemImage: "arrow.clockwise")
+                    }
+                }
+                #else
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: {
                         estudioManager.reiniciarSesion()
@@ -109,6 +118,7 @@ struct EstudioView: View {
                         Label("Reiniciar", systemImage: "arrow.clockwise")
                     }
                 }
+                #endif
             }
         }
     }
@@ -120,11 +130,11 @@ struct EstudioView: View {
         // Filtrar por sistema
         if let sistema = filtroSistema {
             estructuras = estructuras.filter { $0.sistema == sistema }
-        }
-        
-        // Filtrar por categoría
-        if let categoria = filtroCategoria {
-            estructuras = estructuras.filter { $0.categoria == categoria }
+            
+            // Filtrar por categoría si está seleccionada
+            if let categoria = filtroCategoria {
+                estructuras = estructuras.filter { $0.categoria == categoria }
+            }
         }
         
         // Ordenar por dificultad según el historial de estudio
@@ -358,7 +368,11 @@ struct TarjetasEstudioView: View {
         }
         .padding()
         .frame(height: 450)
+        #if os(macOS)
+        .background(Color(NSColor.windowBackgroundColor))
+        #else
         .background(Color(.systemBackground))
+        #endif
         .cornerRadius(12)
         .shadow(radius: 5)
         .overlay(
@@ -492,7 +506,11 @@ struct CuestionarioView: View {
                         
                         Text(opcionesActuales.first?.descripcion ?? "")
                             .padding()
+                            #if os(macOS)
+                            .background(Color(NSColor.controlBackgroundColor).opacity(0.8))
+                            #else
                             .background(Color(.systemGray6))
+                            #endif
                             .cornerRadius(8)
                     }
                     .padding(.horizontal)
@@ -609,14 +627,23 @@ struct CuestionarioView: View {
     // Color de fondo para cada opción según el estado
     private func colorFondo(para codigo: String) -> Color {
         if !mostrarResultado {
-            return seleccionUsuario == codigo ? Color.blue.opacity(0.3) : Color(.systemGray6)
+            return seleccionUsuario == codigo ? Color.blue.opacity(0.3) :
+            #if os(macOS)
+            Color(NSColor.controlBackgroundColor)
+            #else
+            Color(.systemGray6)
+            #endif
         } else {
             if esRespuestaCorrecta(codigo) {
                 return Color.green.opacity(0.3)
             } else if seleccionUsuario == codigo {
                 return Color.red.opacity(0.3)
             } else {
+                #if os(macOS)
+                return Color(NSColor.controlBackgroundColor)
+                #else
                 return Color(.systemGray6)
+                #endif
             }
         }
     }
@@ -778,7 +805,12 @@ struct AsociacionesView: View {
                 .padding(8)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .background(
-                    isSelected ? Color.blue.opacity(0.3) : Color(.systemGray6)
+                    isSelected ? Color.blue.opacity(0.3) :
+                    #if os(macOS)
+                    Color(NSColor.controlBackgroundColor)
+                    #else
+                    Color(.systemGray6)
+                    #endif
                 )
                 .cornerRadius(8)
                 .onTapGesture(perform: onTap)

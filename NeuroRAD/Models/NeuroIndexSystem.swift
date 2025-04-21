@@ -75,6 +75,11 @@ struct CategoriasAnatomicas {
         
         return mapaNombres[categoriaID] ?? "Categoría \(categoriaID)"
     }
+    
+    // Para compatibilidad con funciones de ProgresoView
+    static var allCases: [String] {
+        return ["SG", "SB", "VT", "NUC", "SF", "CRB", "BST", "AR", "VN", "SIN", "NC", "NE", "GNG", "ESA", "CIS"]
+    }
 }
 
 // MARK: - ESTRUCTURA DE NODO ANATÓMICO

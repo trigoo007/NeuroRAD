@@ -13,6 +13,10 @@ import AppKit
 
 // Extensión de Color para compatibilidad entre macOS e iOS
 extension Color {
+    // Estas propiedades ya están definidas en otro lugar del proyecto,
+    // por lo que las comento para evitar la redeclaración
+    
+    /*
     static var systemBackground: Color {
         #if os(macOS)
         return Color(NSColor.windowBackgroundColor)
@@ -36,4 +40,5 @@ extension Color {
         return Color(.systemGray6)
         #endif
     }
+    */
 }
