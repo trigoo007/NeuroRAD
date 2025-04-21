@@ -1,0 +1,1202 @@
+[
+  {
+    "id_code": "CTX-CER",
+    "nombre_espanol": "Corteza Cerebral",
+    "nombre_latin": "Cortex cerebri",
+    "descripcion": "CAPA EXTERNA de sustancia gris de los hemisferios cerebrales. ALTAMENTE PLEGADA en giros (circunvoluciones) y surcos. CUBRE estructuras diencefálicas más profundas.",
+    "funcion": "Procesamiento de información de alto nivel, cognición, percepción sensorial, control motor voluntario, lenguaje.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "LOB-FRO",
+    "nombre_espanol": "Lóbulo Frontal",
+    "nombre_latin": "Lobus frontalis",
+    "descripcion": "EL LÓBULO MÁS GRANDE del hemisferio cerebral. Situado ANTERIOR al Surco Central (SUL-CEN) y SUPERIOR a la Fisura de Silvio (SUL-LAT). Contiene 4 GIROS PRINCIPALES: Superior (GYR-FRO-SUP), Medio (GYR-FRO-MED), Inferior (GYR-FRO-INF) y Precentral (GYR-PRECEN).",
+    "funcion": "Funciones ejecutivas (planificación, toma de decisiones), control motor voluntario (a través de la corteza motora - CTX-MOT-PRI), lenguaje (producción - Área de Broca - CTX-BRO), comportamiento, emociones.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "GYR-FRO-SUP",
+    "nombre_espanol": "Giro Frontal Superior (GFS)",
+    "nombre_latin": "Gyrus frontalis superior",
+    "descripcion": "GIRO verticalmente orientado en el margen MÁS SUPERIOR del lóbulo frontal (LOB-FRO). Separado del Giro Frontal Medio (GYR-FRO-MED) por el Surco Frontal Superior (SUL-FRO-SUP).",
+    "funcion": "Contribuye a funciones ejecutivas, memoria de trabajo, control motor (parte medial).",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "SUL-FRO-SUP",
+    "nombre_espanol": "Surco Frontal Superior (SFS)",
+    "nombre_latin": "Sulcus frontalis superior",
+    "descripcion": "SURCO que separa el Giro Frontal Superior (GYR-FRO-SUP) del Giro Frontal Medio (GYR-FRO-MED). SE UNE al Surco Precentral (SUL-PRECEN) (signo de la T superior).",
+    "funcion": "Delimitación anatómica entre giros frontales.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "GYR-FRO-MED",
+    "nombre_espanol": "Giro Frontal Medio (GFM)",
+    "nombre_latin": "Gyrus frontalis medius",
+    "descripcion": "AMPLIA banda de tejido en el lóbulo frontal (LOB-FRO). Situada entre el Surco Frontal Superior (SUL-FRO-SUP) (arriba) y el Surco Frontal Inferior (SUL-FRO-INF) (abajo). PARALELO al Giro Frontal Superior (GYR-FRO-SUP).",
+    "funcion": "Funciones cognitivas superiores, memoria de trabajo, atención.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "SUL-FRO-INF",
+    "nombre_espanol": "Surco Frontal Inferior",
+    "nombre_latin": "Sulcus frontalis inferior",
+    "descripcion": "SURCO que separa el Giro Frontal Medio (GYR-FRO-MED) del Giro Frontal Inferior (GYR-FRO-INF).",
+    "funcion": "Delimitación anatómica entre giros frontales.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "GYR-FRO-INF",
+    "nombre_espanol": "Giro Frontal Inferior (GFI)",
+    "nombre_latin": "Gyrus frontalis inferior",
+    "descripcion": "GIRO en la superficie lateral e inferior del lóbulo frontal (LOB-FRO). Sobre la Ínsula anterior (MSC-INS). Dividido por ramos de la Fisura de Silvio (SUL-LAT) en TRES PARTES (forma de 'M'): Pars Orbitalis (GYR-FRO-INF-ORB) (anterior), Pars Triangularis (GYR-FRO-INF-TRI) (media), Pars Opercularis (GYR-FRO-INF-OP) (posterior).",
+    "funcion": "Lenguaje (producción - Área de Broca (CTX-BRO), usualmente en el hemisferio izquierdo, en Pars Opercularis y Triangularis), funciones cognitivas.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "GYR-FRO-INF-ORB",
+    "nombre_espanol": "Pars Orbitalis",
+    "nombre_latin": "Pars orbitalis",
+    "descripcion": "LA PARTE MÁS ANTERIOR del Giro Frontal Inferior (GYR-FRO-INF). Componente anterior de la 'M'.",
+    "funcion": "Asociada con procesamiento límbico y toma de decisiones.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "GYR-FRO-INF-TRI",
+    "nombre_espanol": "Pars Triangularis",
+    "nombre_latin": "Pars triangularis",
+    "descripcion": "LA PARTE MEDIA del Giro Frontal Inferior (GYR-FRO-INF), con forma triangular. Componente medio de la 'M'. PARTE del Área de Broca (CTX-BRO).",
+    "funcion": "Procesamiento del lenguaje (semántica, sintaxis), cognición.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "GYR-FRO-INF-OP",
+    "nombre_espanol": "Pars Opercularis",
+    "nombre_latin": "Pars opercularis",
+    "descripcion": "LA PARTE MÁS POSTERIOR del Giro Frontal Inferior (GYR-FRO-INF). Componente posterior de la 'M'. PARTE del Área de Broca (CTX-BRO). CUBRE la ínsula anterior (MSC-INS).",
+    "funcion": "Procesamiento del lenguaje (fonología, articulación), control motor del habla.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "CTX-BRO",
+    "nombre_espanol": "Área de Broca",
+    "nombre_latin": "Area Brocae",
+    "descripcion": "ÁREA FUNCIONAL generalmente en el hemisferio izquierdo. Tradicionalmente incluye la Pars Opercularis (GYR-FRO-INF-OP) y Pars Triangularis (GYR-FRO-INF-TRI) del Giro Frontal Inferior (Áreas 44 y 45 de Brodmann).",
+    "funcion": "Producción del lenguaje, planificación motora del habla.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "GYR-PRECEN",
+    "nombre_espanol": "Giro Precentral (GPreC)",
+    "nombre_latin": "Gyrus precentralis",
+    "descripcion": "GIRO ubicado ANTERIOR al Surco Central (SUL-CEN). DELIMITA la porción MÁS POSTERIOR del lóbulo frontal (LOB-FRO). ALBERGA la Corteza Motora Primaria (CTX-MOT-PRI).",
+    "funcion": "Inicio y ejecución de movimientos voluntarios contralaterales.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "CTX-MOT-PRI",
+    "nombre_espanol": "Corteza Motora Primaria",
+    "nombre_latin": "Cortex motorius primarius",
+    "descripcion": "ÁREA FUNCIONAL ubicada en el Giro Precentral (GYR-PRECEN) (Área 4 de Brodmann). Contiene el 'homúnculo motor'.",
+    "funcion": "Control directo de los movimientos voluntarios finos, especialmente de las extremidades distales.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "SUL-PRECEN",
+    "nombre_espanol": "Surco Precentral (SPreC)",
+    "nombre_latin": "Sulcus precentralis",
+    "descripcion": "SURCO ubicado ANTERIOR y paralelo al Giro Precentral (GYR-PRECEN). Separa el Giro Precentral de los Giros Frontales Superior (GYR-FRO-SUP), Medio (GYR-FRO-MED) e Inferior (GYR-FRO-INF).",
+    "funcion": "Delimitación anatómica.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "MSC-FRO-POL",
+    "nombre_espanol": "Polo Frontal",
+    "nombre_latin": "Polus frontalis",
+    "descripcion": "LA PORCIÓN MÁS ANTERIOR del Lóbulo Frontal (LOB-FRO).",
+    "funcion": "Asociado con funciones cognitivas complejas.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "CTX-PREFRO",
+    "nombre_espanol": "Corteza Prefrontal",
+    "nombre_latin": "Cortex prefrontalis",
+    "descripcion": "PARTE ANTERIOR del Lóbulo Frontal (LOB-FRO), anterior a las áreas motoras (CTX-MOT-PRI).",
+    "funcion": "Funciones ejecutivas SUPERIORES, regulación cognitiva, emocional y conductual.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "CTX-ORBFRO",
+    "nombre_espanol": "Corteza Orbitofrontal",
+    "nombre_latin": "Cortex orbitofrontalis",
+    "descripcion": "Región de la corteza prefrontal (CTX-PREFRO) en la superficie INFERIOR del lóbulo frontal. REPOSA sobre la porción orbitaria del hueso frontal. CONTIENE los Giros Orbitarios (GYR-ORB).",
+    "funcion": "Procesamiento de recompensas, toma de decisiones, regulación emocional.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "GYR-ORB",
+    "nombre_espanol": "Giros Orbitarios (Anterior, Medial, Posterior, Lateral)",
+    "nombre_latin": "Gyri orbitales",
+    "descripcion": "CUATRO giros en la Corteza Orbitofrontal (CTX-ORBFRO). Delineados por el Surco Orbitario (SUL-ORB) en forma de 'H'.",
+    "funcion": "Contribuyen a las funciones de la corteza orbitofrontal.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "SUL-ORB",
+    "nombre_espanol": "Surco Orbitario (Surco en H)",
+    "nombre_latin": "Sulcus orbitalis",
+    "descripcion": "SURCO distintivo en forma de 'H' en la Corteza Orbitofrontal (CTX-ORBFRO). DELIMITA los cuatro Giros Orbitarios (GYR-ORB).",
+    "funcion": "Delimitación anatómica.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "GYR-REC",
+    "nombre_espanol": "Giro Recto",
+    "nombre_latin": "Gyrus rectus",
+    "descripcion": "GIRO MÁS MEDIAL en la superficie inferior del lóbulo frontal (LOB-FRO). SEPARADO de los Giros Orbitarios (GYR-ORB) por el Surco Olfatorio (SUL-OLF).",
+    "funcion": "Función incierta, posiblemente relacionada con olfato o cognición social.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "SUL-OLF",
+    "nombre_espanol": "Surco Olfatorio",
+    "nombre_latin": "Sulcus olfactorius",
+    "descripcion": "SURCO verticalmente orientado en la superficie inferior frontal. SEPARA el Giro Recto (GYR-REC) (medial) de los Giros Orbitarios (GYR-ORB) (lateral). ALOJA el Tracto Olfatorio (TRC-OLF).",
+    "funcion": "Delimitación anatómica y alojamiento del tracto olfatorio.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "TRC-OLF",
+    "nombre_espanol": "Tracto Olfatorio",
+    "nombre_latin": "Tractus olfactorius",
+    "descripcion": "Haz de fibras nerviosas que discurre por el Surco Olfatorio (SUL-OLF). CONECTA el bulbo olfatorio con áreas olfatorias corticales.",
+    "funcion": "Transmisión de información olfativa.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "LOB-PAR",
+    "nombre_espanol": "Lóbulo Parietal",
+    "nombre_latin": "Lobus parietalis",
+    "descripcion": "LÓBULO ubicado POSTERIOR al Surco Central (SUL-CEN), SUPERIOR al Lóbulo Temporal (LOB-TEM) e INFERIOR al Lóbulo Frontal (LOB-FRO). Dividido en CUATRO REGIONES: Giro Postcentral (GYR-POSTCEN) (anterior), Lobulillos Parietales Superior (LOB-PAR-SUP) e Inferior (LOB-PAR-INF) (posterior), y Precúneo (GYR-PRECUN) (medial).",
+    "funcion": "Procesamiento somatosensorial, integración sensorial, percepción espacial, navegación, atención, lenguaje (comprensión).",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "GYR-POSTCEN",
+    "nombre_espanol": "Giro Postcentral (GPostC)",
+    "nombre_latin": "Gyrus postcentralis",
+    "descripcion": "GIRO ubicado INMEDIATAMENTE POSTERIOR al Surco Central (SUL-CEN). PARALELO al Surco Central. ALBERGA la Corteza Somatosensorial Primaria (CTX-SOM-PRI).",
+    "funcion": "Recepción y procesamiento inicial de información táctil, propioceptiva, de dolor y temperatura del cuerpo contralateral.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "CTX-SOM-PRI",
+    "nombre_espanol": "Corteza Somatosensorial Primaria",
+    "nombre_latin": "Cortex somatosensorius primarius",
+    "descripcion": "ÁREA FUNCIONAL ubicada en el Giro Postcentral (GYR-POSTCEN) (Áreas 3, 1, 2 de Brodmann). Contiene el 'homúnculo sensorial'.",
+    "funcion": "Procesamiento inicial de las sensaciones somáticas.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "SUL-POSTCEN",
+    "nombre_espanol": "Surco Postcentral (SPostC)",
+    "nombre_latin": "Sulcus postcentralis",
+    "descripcion": "SURCO ubicado POSTERIOR y paralelo al Giro Postcentral (GYR-POSTCEN). SEPARA el Giro Postcentral de los Lobulillos Parietales Superior (LOB-PAR-SUP) e Inferior (LOB-PAR-INF).",
+    "funcion": "Delimitación anatómica.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "LOB-PAR-SUP",
+    "nombre_espanol": "Lobulillo Parietal Superior",
+    "nombre_latin": "Lobulus parietalis superior",
+    "descripcion": "Región del lóbulo parietal (LOB-PAR) ubicada POSTERIOR al Surco Postcentral (SUL-POSTCEN) y SUPERIOR al Surco Intraparietal (SUL-INTRAPAR). CONTINÚA medialmente con el Precúneo (GYR-PRECUN).",
+    "funcion": "Orientación espacial, navegación, procesamiento visomotor, atención.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "LOB-PAR-INF",
+    "nombre_espanol": "Lobulillo Parietal Inferior",
+    "nombre_latin": "Lobulus parietalis inferior",
+    "descripcion": "Región del lóbulo parietal (LOB-PAR) ubicada POSTERIOR al Surco Postcentral (SUL-POSTCEN) e INFERIOR al Surco Intraparietal (SUL-INTRAPAR). COMPUESTO por el Giro Supramarginal (GYR-SMG) y el Giro Angular (GYR-ANG).",
+    "funcion": "Integración multimodal (visual, auditiva, somatosensorial), lenguaje (comprensión, lectura, escritura), atención, procesamiento numérico.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "GYR-SMG",
+    "nombre_espanol": "Giro Supramarginal (GSM)",
+    "nombre_latin": "Gyrus supramarginalis",
+    "descripcion": "GIRO en forma de 'U' invertida que rodea el extremo posterior ascendente de la Fisura de Silvio (SUL-LAT-ASC). PARTE ANTERIOR del Lobulillo Parietal Inferior (LOB-PAR-INF).",
+    "funcion": "Procesamiento fonológico y articulatorio del lenguaje, empatía, percepción de acciones ajenas.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "GYR-ANG",
+    "nombre_espanol": "Giro Angular (GA)",
+    "nombre_latin": "Gyrus angularis",
+    "descripcion": "GIRO ubicado usualmente POSTERIOR al Giro Supramarginal (GYR-SMG). PARTE POSTERIOR del Lobulillo Parietal Inferior (LOB-PAR-INF). A menudo rodea el extremo posterior del Surco Temporal Superior (SUL-TEM-SUP).",
+    "funcion": "Procesamiento semántico del lenguaje, lectura, escritura, cálculo, atención espacial, recuperación de memoria.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "GYR-ANG-ACC",
+    "nombre_espanol": "Giro Preangular Accesorio (GPA)",
+    "nombre_latin": "Gyrus preangularis accessorius",
+    "descripcion": "GIRO ACCESORIO que puede encontrarse interpuesto entre el Giro Supramarginal (GYR-SMG) y el Giro Angular (GYR-ANG). Una VARIACIÓN anatómica.",
+    "funcion": "Contribuye a las funciones del Lobulillo Parietal Inferior (LOB-PAR-INF).",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "SUL-INTRAPAR",
+    "nombre_espanol": "Surco Intraparietal (SIP)",
+    "nombre_latin": "Sulcus intraparietalis",
+    "descripcion": "SURCO PRINCIPAL que divide el Lobulillo Parietal Superior (LOB-PAR-SUP) del Lobulillo Parietal Inferior (LOB-PAR-INF). Se extiende desde el Surco Postcentral (SUL-POSTCEN) hacia atrás.",
+    "funcion": "Delimitación anatómica, implicado en control oculomotor, atención visuoespacial, procesamiento numérico.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "SUL-INTMED-PRI",
+    "nombre_espanol": "Surco Intermedio Primario (de Jensen)",
+    "nombre_latin": "Sulcus intermedius primus (Jensen)",
+    "descripcion": "SURCO que desciende desde el Surco Intraparietal (SUL-INTRAPAR). SEPARA el Giro Supramarginal (GYR-SMG) del Giro Angular (GYR-ANG).",
+    "funcion": "Delimitación anatómica.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "GYR-PRECUN",
+    "nombre_espanol": "Precúneo",
+    "nombre_latin": "Precuneus",
+    "descripcion": "Área del lóbulo parietal (LOB-PAR) en la superficie MEDIAL del hemisferio. Ubicada ANTERIOR al Cúneo (GYR-CUN) (separados por Surco Parieto-occipital - SUL-PAROCC) y POSTERIOR al Lobulillo Paracentral (GYR-PARACEN). SUPERIOR al Giro Cingulado Posterior (GYR-CING).",
+    "funcion": "Integración visuoespacial, memoria episódica, conciencia de sí mismo, atención dirigida internamente.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "LOB-TEM",
+    "nombre_espanol": "Lóbulo Temporal",
+    "nombre_latin": "Lobus temporalis",
+    "descripcion": "LÓBULO ubicado INFERIOR a la Fisura de Silvio (SUL-LAT) y ANTERIOR al Lóbulo Occipital (LOB-OCC). Contiene TRES giros principales en su superficie lateral: Superior (GYR-TEM-SUP), Medio (GYR-TEM-MED) e Inferior (GYR-TEM-INF).",
+    "funcion": "Audición (corteza auditiva primaria - CTX-AUD-PRI), procesamiento del lenguaje (comprensión - Área de Wernicke - CTX-WER), memoria (Hipocampo - LIM-HIPP), reconocimiento de objetos y caras, emociones (Amígdala - LIM-AMYG).",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "GYR-TEM-SUP",
+    "nombre_espanol": "Giro Temporal Superior (GTS)",
+    "nombre_latin": "Gyrus temporalis superior",
+    "descripcion": "GIRO MÁS SUPERIOR del lóbulo temporal (LOB-TEM), paralelo a la Fisura de Silvio (SUL-LAT). Contiene la Corteza Auditiva Primaria (Giro de Heschl - GYR-HESCHL) y el Área de Wernicke (CTX-WER) (generalmente en el hemisferio dominante).",
+    "funcion": "Procesamiento auditivo primario, comprensión del lenguaje.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "SUL-TEM-SUP",
+    "nombre_espanol": "Surco Temporal Superior",
+    "nombre_latin": "Sulcus temporalis superior",
+    "descripcion": "SURCO que separa el Giro Temporal Superior (GYR-TEM-SUP) del Giro Temporal Medio (GYR-TEM-MED).",
+    "funcion": "Delimitación anatómica.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "GYR-TEM-MED",
+    "nombre_espanol": "Giro Temporal Medio (GTM)",
+    "nombre_latin": "Gyrus temporalis medius",
+    "descripcion": "GIRO ubicado entre el Surco Temporal Superior (SUL-TEM-SUP) (arriba) y el Surco Temporal Inferior (SUL-TEM-INF) (abajo).",
+    "funcion": "Procesamiento multimodal, reconocimiento facial y de objetos, cognición social.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "SUL-TEM-INF",
+    "nombre_espanol": "Surco Temporal Inferior",
+    "nombre_latin": "Sulcus temporalis inferior",
+    "descripcion": "SURCO que separa el Giro Temporal Medio (GYR-TEM-MED) del Giro Temporal Inferior (GYR-TEM-INF).",
+    "funcion": "Delimitación anatómica.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "GYR-TEM-INF",
+    "nombre_espanol": "Giro Temporal Inferior (GTI)",
+    "nombre_latin": "Gyrus temporalis inferior",
+    "descripcion": "GIRO MÁS INFERIOR en la superficie lateral del lóbulo temporal (LOB-TEM). Se continúa en la base del cerebro.",
+    "funcion": "Reconocimiento visual de objetos de alto nivel.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "CTX-WER",
+    "nombre_espanol": "Área de Wernicke",
+    "nombre_latin": "Area Wernicke",
+    "descripcion": "ÁREA FUNCIONAL tradicionalmente localizada en la parte posterior del Giro Temporal Superior (GYR-TEM-SUP) del hemisferio dominante (Área 22 de Brodmann).",
+    "funcion": "Comprensión del lenguaje hablado y escrito.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "GYR-HESCHL",
+    "nombre_espanol": "Giro Temporal Transverso (Giro de Heschl)",
+    "nombre_latin": "Gyrus temporalis transversus (Heschl)",
+    "descripcion": "GIRO(S) ubicado(s) en la superficie superior del Giro Temporal Superior (GYR-TEM-SUP), dentro de la Fisura de Silvio (SUL-LAT). CORRESPONDE a la Corteza Auditiva Primaria (CTX-AUD-PRI).",
+    "funcion": "Procesamiento inicial de la información auditiva.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "CTX-AUD-PRI",
+    "nombre_espanol": "Corteza Auditiva Primaria",
+    "nombre_latin": "Cortex auditorius primarius",
+    "descripcion": "ÁREA FUNCIONAL localizada en el Giro de Heschl (GYR-HESCHL) (Áreas 41 y 42 de Brodmann).",
+    "funcion": "Recepción y análisis básico de los sonidos (tono, volumen).",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "SUL-HESCHL",
+    "nombre_espanol": "Surco de Heschl",
+    "nombre_latin": "Sulcus Heschl",
+    "descripcion": "SURCO ubicado POSTERIOR al Giro de Heschl (GYR-HESCHL). REPRESENTA el límite anterior del Planum Temporale (MSC-PLTEM).",
+    "funcion": "Delimitación anatómica.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "MSC-PLTEM",
+    "nombre_espanol": "Planum Temporale",
+    "nombre_latin": "Planum temporale",
+    "descripcion": "Área en la superficie superior del lóbulo temporal (LOB-TEM), POSTERIOR al Giro de Heschl (GYR-HESCHL). Usualmente MÁS GRANDE en el hemisferio izquierdo.",
+    "funcion": "Asociación auditiva, procesamiento del lenguaje, música.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "GYR-OCCTEM-LAT",
+    "nombre_espanol": "Giro Occipitotemporal Lateral (Giro Fusiforme)",
+    "nombre_latin": "Gyrus occipitotemporalis lateralis (Gyrus fusiformis)",
+    "descripcion": "GIRO alargado en la superficie basal (inferior) de los lóbulos temporal (LOB-TEM) y occipital (LOB-OCC). LATERAL al Giro Parahipocampal (GYR-PHIPP) (separados por Surco Colateral - SUL-COLL) y MEDIAL al Giro Temporal Inferior (GYR-TEM-INF) (separados por Surco Occipitotemporal Lateral - SUL-OCCTEM-LAT).",
+    "funcion": "Reconocimiento facial (área fusiforme de las caras), reconocimiento de palabras (área visual de la forma de las palabras), procesamiento de colores, reconocimiento de objetos.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "SUL-OCCTEM-LAT",
+    "nombre_espanol": "Surco Occipitotemporal Lateral",
+    "nombre_latin": "Sulcus occipitotemporalis lateralis",
+    "descripcion": "SURCO en la superficie basal que separa el Giro Temporal Inferior (GYR-TEM-INF) del Giro Occipitotemporal Lateral (Fusiforme) (GYR-OCCTEM-LAT).",
+    "funcion": "Delimitación anatómica.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "GYR-PHIPP",
+    "nombre_espanol": "Giro Parahipocampal",
+    "nombre_latin": "Gyrus parahippocampalis",
+    "descripcion": "GIRO en la superficie MEDIAL del lóbulo temporal (LOB-TEM). RODEA al Hipocampo (LIM-HIPP). MEDIAL al Giro Occipitotemporal Lateral (GYR-OCCTEM-LAT) (separados por Surco Colateral - SUL-COLL). Su extremo anterior se curva formando el Uncus (LIM-UNC).",
+    "funcion": "Memoria espacial (codificación y recuperación), formación de memoria declarativa (junto con el hipocampo), reconocimiento de escenas.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "SUL-COLL",
+    "nombre_espanol": "Surco Colateral",
+    "nombre_latin": "Sulcus collateralis",
+    "descripcion": "SURCO en la superficie basal que separa el Giro Parahipocampal (GYR-PHIPP) (medial) del Giro Occipitotemporal Lateral (Fusiforme) (GYR-OCCTEM-LAT) (lateral).",
+    "funcion": "Delimitación anatómica.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "LIM-HIPP",
+    "nombre_espanol": "Hipocampo",
+    "nombre_latin": "Hippocampus",
+    "descripcion": "Estructura curva localizada PROFUNDAMENTE en el lóbulo temporal medial (LOB-TEM). PARTE del sistema límbico. SEPARADO del Giro Parahipocampal (GYR-PHIPP) por la Fisura Hipocampal (SUL-HIPP).",
+    "funcion": "CRUCIAL para la formación de nuevas memorias declarativas (episódicas y semánticas), aprendizaje espacial y navegación.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "SUL-HIPP",
+    "nombre_espanol": "Fisura Hipocampal",
+    "nombre_latin": "Fissura hippocampi",
+    "descripcion": "SURCO que separa el Giro Parahipocampal (GYR-PHIPP) del Hipocampo (LIM-HIPP).",
+    "funcion": "Delimitación anatómica.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "LIM-UNC",
+    "nombre_espanol": "Uncus",
+    "nombre_latin": "Uncus gyri parahippocampalis",
+    "descripcion": "Extremo ANTERIOR y MEDIAL del Giro Parahipocampal (GYR-PHIPP), con forma de gancho.",
+    "funcion": "Procesamiento olfativo, memoria emocional. Punto de referencia importante en herniaciones cerebrales.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "LIM-AMYG",
+    "nombre_espanol": "Amígdala",
+    "nombre_latin": "Corpus amygdaloideum",
+    "descripcion": "Conjunto de núcleos en forma de almendra, ubicado PROFUNDO y MEDIAL en el lóbulo temporal (LOB-TEM), ANTERIOR al hipocampo (LIM-HIPP). CONECTADO al Limen Insulae (MSC-LIMINS).",
+    "funcion": "Procesamiento y memoria de emociones (especialmente miedo), respuestas emocionales, toma de decisiones.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "MSC-TEM-POL",
+    "nombre_espanol": "Polo Temporal",
+    "nombre_latin": "Polus temporalis",
+    "descripcion": "Extremo MÁS ANTERIOR del Lóbulo Temporal (LOB-TEM). BAJO la Fisura de Silvio (SUL-LAT).",
+    "funcion": "Procesamiento multimodal, cognición social, memoria semántica.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "TRC-TEM-STEM",
+    "nombre_espanol": "Tronco Temporal",
+    "nombre_latin": "Truncus temporalis",
+    "descripcion": "Haz de sustancia blanca que CONECTA el lóbulo temporal (LOB-TEM) con el lóbulo frontal (LOB-FRO). Situado cerca de la Ínsula (MSC-INS).",
+    "funcion": "Vía de conexión frontotemporal. Relevante en patologías como epilepsia, tumores.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "LOB-OCC",
+    "nombre_espanol": "Lóbulo Occipital",
+    "nombre_latin": "Lobus occipitalis",
+    "descripcion": "LÓBULO MÁS POSTERIOR del cerebro. Principalmente dedicado al procesamiento visual. SEPARADO del lóbulo parietal (LOB-PAR) medialmente por el Surco Parieto-occipital (SUL-PAROCC).",
+    "funcion": "Procesamiento visual (color, forma, movimiento). Alberga la corteza visual primaria (CTX-VIS-PRI) y áreas de asociación visual.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "GYR-CUN",
+    "nombre_espanol": "Cúneo",
+    "nombre_latin": "Cuneus",
+    "descripcion": "Giro en forma de cuña en la superficie MEDIAL del lóbulo occipital (LOB-OCC). Ubicado SUPERIOR al Surco Calcarino (SUL-CALC) e INFERIOR al Surco Parieto-occipital (SUL-PAROCC).",
+    "funcion": "Procesamiento visual básico, integra información del campo visual inferior contralateral.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "GYR-LING",
+    "nombre_espanol": "Giro Lingual",
+    "nombre_latin": "Gyrus lingualis",
+    "descripcion": "Giro en forma de lengua en la superficie MEDIAL e INFERIOR del lóbulo occipital (LOB-OCC). Ubicado INFERIOR al Surco Calcarino (SUL-CALC) y POSTERIOR al Giro Parahipocampal (GYR-PHIPP).",
+    "funcion": "Procesamiento visual (identificación de letras, análisis de escenas visuales lógicas), integra información del campo visual superior contralateral.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "SUL-CALC",
+    "nombre_espanol": "Surco Calcarino",
+    "nombre_latin": "Sulcus calcarinus",
+    "descripcion": "SURCO PRINCIPAL en la superficie MEDIAL del lóbulo occipital (LOB-OCC). Discurre casi perpendicular al Surco Parieto-occipital (SUL-PAROCC). SEPARA el Cúneo (GYR-CUN) (superior) del Giro Lingual (GYR-LING) (inferior). RODEADO por la Corteza Visual Primaria (CTX-VIS-PRI).",
+    "funcion": "Delimitación anatómica clave para la corteza visual.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "CTX-VIS-PRI",
+    "nombre_espanol": "Corteza Visual Primaria",
+    "nombre_latin": "Cortex visualis primarius",
+    "descripcion": "ÁREA FUNCIONAL localizada en los labios superior e inferior del Surco Calcarino (SUL-CALC) (Área 17 de Brodmann).",
+    "funcion": "Recepción y procesamiento inicial de la información visual proveniente de la retina.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "SUL-CALC-ANT",
+    "nombre_espanol": "Surco Calcarino Anterior",
+    "nombre_latin": "Sulcus calcarinus anterior",
+    "descripcion": "Porción ANTERIOR del Surco Calcarino (SUL-CALC). Se extiende ANTERIOR e INFERIORMENTE desde la unión del Surco Parieto-occipital (SUL-PAROCC) y Calcarino. SEPARA el Giro Lingual (GYR-LING) de la continuación del Surco Cingulado (SUL-CING).",
+    "funcion": "Delimitación anatómica.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "GYR-OCC-SUP",
+    "nombre_espanol": "Giro Occipital Superior",
+    "nombre_latin": "Gyrus occipitalis superior",
+    "descripcion": "GIRO MÁS SUPERIOR en la superficie lateral del lóbulo occipital (LOB-OCC). Se continúa medialmente con el Cúneo (GYR-CUN).",
+    "funcion": "Procesamiento visual de orden superior.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "SUL-OCC-SUP",
+    "nombre_espanol": "Surco Occipital Superior",
+    "nombre_latin": "Sulcus occipitalis superior",
+    "descripcion": "SURCO en la superficie lateral del lóbulo occipital (LOB-OCC). SEPARA el Giro Occipital Superior (GYR-OCC-SUP) del Giro Occipital Medio (GYR-OCC-MED).",
+    "funcion": "Delimitación anatómica.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "GYR-OCC-MED",
+    "nombre_espanol": "Giro Occipital Medio",
+    "nombre_latin": "Gyrus occipitalis medius",
+    "descripcion": "GIRO en la superficie lateral del lóbulo occipital (LOB-OCC), entre los surcos occipitales superior (SUL-OCC-SUP) e inferior (SUL-OCC-INF). OCUPA la mayor área lateral. Puede dividirse por el Surco Occipital Medio (SUL-OCC-MED).",
+    "funcion": "Procesamiento visual de orden superior.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "SUL-OCC-MED",
+    "nombre_espanol": "Surco Occipital Medio",
+    "nombre_latin": "Sulcus occipitalis medius",
+    "descripcion": "SURCO horizontal que puede dividir el Giro Occipital Medio (GYR-OCC-MED) en porciones superior e inferior.",
+    "funcion": "Delimitación anatómica (variable).",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "GYR-OCC-INF",
+    "nombre_espanol": "Giro Occipital Inferior",
+    "nombre_latin": "Gyrus occipitalis inferior",
+    "descripcion": "GIRO MÁS INFERIOR en la superficie lateral del lóbulo occipital (LOB-OCC).",
+    "funcion": "Procesamiento visual de orden superior.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "SUL-OCC-INF",
+    "nombre_espanol": "Surco Occipital Inferior",
+    "nombre_latin": "Sulcus occipitalis inferior",
+    "descripcion": "SURCO en la superficie lateral del lóbulo occipital (LOB-OCC). SEPARA el Giro Occipital Medio (GYR-OCC-MED) del Giro Occipital Inferior (GYR-OCC-INF). Se extiende posteriorly desde el Surco Temporal Inferior (SUL-TEM-INF).",
+    "funcion": "Delimitación anatómica.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "SUL-INTRAOCC",
+    "nombre_espanol": "Surco Intraoccipital",
+    "nombre_latin": "Sulcus intraoccipitalis",
+    "descripcion": "Continuación del Surco Intraparietal (SUL-INTRAPAR) en el lóbulo occipital (LOB-OCC). Discurre PARALELO a la Fisura Interhemisférica (SUL-INTERHEM) en vistas axiales. PERPENDICULAR al Surco Parieto-occipital (SUL-PAROCC).",
+    "funcion": "Delimitación anatómica, relacionado con procesamiento visual espacial.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "MSC-INS",
+    "nombre_espanol": "Ínsula (Lóbulo de la Ínsula)",
+    "nombre_latin": "Insula",
+    "descripcion": "LÓBULO CEREBRAL 'oculto', situado PROFUNDAMENTE en la Fisura de Silvio (SUL-LAT). CUBIERTO por los opérculos frontal (MSC-OP-FRO), parietal (MSC-OP-PAR) y temporal (MSC-OP-TEM). RODEADO por el Surco Circular (SUL-INS-CIRC).",
+    "funcion": "Integración interoceptiva (conciencia corporal interna), procesamiento emocional, gusto, dolor, funciones autonómicas, cognición social.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "GYR-INS-BREV",
+    "nombre_espanol": "Giros Insulares Cortos (Anterior, Medio, Posterior)",
+    "nombre_latin": "Gyri breves insulae",
+    "descripcion": "GRUPO ANTERIOR de giros de la Ínsula (MSC-INS). SEPARADOS de los Giros Largos (GYR-INS-LONG) por el Surco Central de la Ínsula (SUL-INS-CEN).",
+    "funcion": "Contribuyen a las funciones insulares, posiblemente más relacionadas con aspectos olfato-gustativos y socio-emocionales.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "GYR-INS-LONG",
+    "nombre_espanol": "Giros Insulares Largos (Anterior, Posterior)",
+    "nombre_latin": "Gyri longi insulae",
+    "descripcion": "GRUPO POSTERIOR de giros de la Ínsula (MSC-INS). SEPARADOS de los Giros Cortos (GYR-INS-BREV) por el Surco Central de la Ínsula (SUL-INS-CEN).",
+    "funcion": "Contribuyen a las funciones insulares, posiblemente más relacionadas con aspectos auditivos, somatosensoriales y vestibulares.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "SUL-INS-CEN",
+    "nombre_espanol": "Surco Central de la Ínsula",
+    "nombre_latin": "Sulcus centralis insulae",
+    "descripcion": "SURCO que divide la Ínsula (MSC-INS) en un LOBULILLO ANTERIOR (más grande, con giros cortos - GYR-INS-BREV) y un LOBULILLO POSTERIOR (más pequeño, con giros largos - GYR-INS-LONG).",
+    "funcion": "Delimitación anatómica intrainsular.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "SUL-INS-CIRC",
+    "nombre_espanol": "Surco Circular de la Ínsula",
+    "nombre_latin": "Sulcus circularis insulae",
+    "descripcion": "SURCO que RODEA y delimita la corteza insular (MSC-INS). Tiene segmentos anterior, superior e inferior que la separan de los opérculos frontal (MSC-OP-FRO), parietal (MSC-OP-PAR) y temporal (MSC-OP-TEM).",
+    "funcion": "LÍMITE EXTERNO de la Ínsula.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "MSC-LIMINS",
+    "nombre_espanol": "Limen Insulae",
+    "nombre_latin": "Limen insulae",
+    "descripcion": "PUNTO de unión de los segmentos anterior y posterior de la Fisura de Silvio (SUL-LAT). MARCA el punto donde la corteza insular (MSC-INS) se encuentra con la Amígdala (LIM-AMYG) y el Giro Temporal Superior (GYR-TEM-SUP).",
+    "funcion": "Punto de referencia anatómico en la base de la Ínsula.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "MSC-OP-FRO",
+    "nombre_espanol": "Opérculo Frontal",
+    "nombre_latin": "Operculum frontale",
+    "descripcion": "Parte del Lóbulo Frontal (LOB-FRO) (principalmente Giro Frontal Inferior - GYR-FRO-INF) que CUBRE la Ínsula (MSC-INS).",
+    "funcion": "Contribuye a las funciones del Giro Frontal Inferior (lenguaje, etc.).",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "MSC-OP-PAR",
+    "nombre_espanol": "Opérculo Parietal",
+    "nombre_latin": "Operculum parietale",
+    "descripcion": "Parte del Lóbulo Parietal (LOB-PAR) (principalmente porción inferior del Giro Postcentral - GYR-POSTCEN y Giro Supramarginal - GYR-SMG) que CUBRE la Ínsula (MSC-INS).",
+    "funcion": "Contribuye a funciones somatosensoriales y de lenguaje.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "MSC-OP-TEM",
+    "nombre_espanol": "Opérculo Temporal",
+    "nombre_latin": "Operculum temporale",
+    "descripcion": "Parte del Lóbulo Temporal (LOB-TEM) (principalmente Giro Temporal Superior - GYR-TEM-SUP) que CUBRE la Ínsula (MSC-INS).",
+    "funcion": "Contribuye a funciones auditivas y de lenguaje (comprensión).",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "SUL-CEN",
+    "nombre_espanol": "Surco Central (SC) (Cisura de Rolando)",
+    "nombre_latin": "Sulcus centralis (Rolandi)",
+    "descripcion": "SURCO PRINCIPAL y profundo en la superficie lateral del hemisferio. SEPARA el Lóbulo Frontal (LOB-FRO) (Giro Precentral - GYR-PRECEN) del Lóbulo Parietal (LOB-PAR) (Giro Postcentral - GYR-POSTCEN). LANDMARK ANATÓMICO CLAVE.",
+    "funcion": "LÍMITE FUNDAMENTAL entre las cortezas motora primaria (CTX-MOT-PRI) y somatosensorial primaria (CTX-SOM-PRI).",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "SUL-LAT",
+    "nombre_espanol": "Fisura Lateral (Fisura de Silvio)",
+    "nombre_latin": "Fissura lateralis (Sylvii)",
+    "descripcion": "FISURA PROFUNDA Y LARGA en la superficie lateral del cerebro. SEPARA el Lóbulo Temporal (LOB-TEM) (inferior) de los Lóbulos Frontal (LOB-FRO) y Parietal (LOB-PAR) (superior). OCULTA la Ínsula (MSC-INS).",
+    "funcion": "LANDMARK ANATÓMICO MAYOR que delimita lóbulos y contiene vasos importantes (Arteria Cerebral Media).",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "SUL-LAT-ASC",
+    "nombre_espanol": "Ramo Ascendente de la Fisura de Silvio",
+    "nombre_latin": "Ramus ascendens fissurae lateralis",
+    "descripcion": "Parte POSTERIOR de la Fisura de Silvio (SUL-LAT) que se angula SUPERIORMENTE. TERMINA en el Giro Supramarginal (GYR-SMG).",
+    "funcion": "Delimitación anatómica.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "SUL-PAROCC",
+    "nombre_espanol": "Surco Parieto-occipital",
+    "nombre_latin": "Sulcus parietooccipitalis",
+    "descripcion": "SURCO prominente en la superficie MEDIAL del hemisferio. SEPARA el Lóbulo Parietal (LOB-PAR) (Precúneo - GYR-PRECUN) del Lóbulo Occipital (LOB-OCC) (Cúneo - GYR-CUN).",
+    "funcion": "LÍMITE PRINCIPAL entre los lóbulos parietal y occipital.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "GYR-CING",
+    "nombre_espanol": "Giro Cingulado",
+    "nombre_latin": "Gyrus cinguli",
+    "descripcion": "GIRO arqueado en la superficie MEDIAL del hemisferio. PARALELO y SUPERIOR al Cuerpo Calloso (MSC-CC) (separados por el Surco del Cuerpo Calloso - SUL-CC). INFERIOR al Giro Frontal Superior (GYR-FRO-SUP) y Lobulillo Paracentral (GYR-PARACEN) (separados por el Surco Cingulado - SUL-CING). PARTE IMPORTANTE del Sistema Límbico (Circuito de Papez - MSC-PAPEZ).",
+    "funcion": "Regulación emocional, procesamiento del dolor, aprendizaje, memoria, toma de decisiones, control ejecutivo.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "TRC-CING",
+    "nombre_espanol": "Cíngulo",
+    "nombre_latin": "Cingulum",
+    "descripcion": "Haz de fibras de asociación (SUSTANCIA BLANCA - BSC-WM) que discurre DENTRO del Giro Cingulado (GYR-CING) y Giro Parahipocampal (GYR-PHIPP). CONECTA componentes del sistema límbico.",
+    "funcion": "Comunicación entre áreas límbicas y prefrontales.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "SUL-CING",
+    "nombre_espanol": "Surco Cingulado",
+    "nombre_latin": "Sulcus cinguli",
+    "descripcion": "SURCO en la superficie MEDIAL. SEPARA el Giro Cingulado (GYR-CING) (inferior) del Giro Frontal Superior (GYR-FRO-SUP) y Lobulillo Paracentral (GYR-PARACEN) (superior). Su parte posterior se curva hacia arriba como Pars Marginalis (SUL-CING-MARG).",
+    "funcion": "Delimitación anatómica del Giro Cingulado.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "SUL-CING-MARG",
+    "nombre_espanol": "Pars Marginalis del Surco Cingulado",
+    "nombre_latin": "Pars marginalis sulci cinguli",
+    "descripcion": "Porción POSTERIOR y ASCENDENTE del Surco Cingulado (SUL-CING). Se curva hacia el borde superior del hemisferio. LANDMARK para localizar el Surco Central (SUL-CEN).",
+    "funcion": "Delimitación posterior del Lobulillo Paracentral (GYR-PARACEN).",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "SUL-SUBPAR",
+    "nombre_espanol": "Surco Subparietal",
+    "nombre_latin": "Sulcus subparietalis",
+    "descripcion": "SURCO en la superficie MEDIAL, ubicado entre la Pars Marginalis del Surco Cingulado (SUL-CING-MARG) (anterior) y el Surco Parieto-occipital (SUL-PAROCC) (posterior). SEPARA el Precúneo (GYR-PRECUN) (superior) de la porción posterior del Giro Cingulado (GYR-CING) (inferior).",
+    "funcion": "Delimitación anatómica.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "GYR-PARACEN",
+    "nombre_espanol": "Lobulillo Paracentral",
+    "nombre_latin": "Lobulus paracentralis",
+    "descripcion": "Área en la superficie MEDIAL del hemisferio donde se FUSIONAN el Giro Precentral (GYR-PRECEN) y el Giro Postcentral (GYR-POSTCEN), rodeando el extremo superior del Surco Central (SUL-CEN). CONTINUACIÓN medial de las cortezas motora (CTX-MOT-PRI) y somatosensorial primarias (CTX-SOM-PRI).",
+    "funcion": "Control motor y procesamiento sensorial de la pierna y pie contralaterales, control de esfínteres.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "GYR-SUBCEN",
+    "nombre_espanol": "Giro Subcentral",
+    "nombre_latin": "Gyrus subcentralis",
+    "descripcion": "Área donde se FUSIONAN las porciones INFERIORES de los Giros Precentral (GYR-PRECEN) y Postcentral (GYR-POSTCEN), por debajo del extremo inferior del Surco Central (SUL-CEN), cerca de la Fisura de Silvio (SUL-LAT).",
+    "funcion": "Representación motora y sensorial de la cara y faringe, posible rol en procesamiento gustativo.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "MSC-CC",
+    "nombre_espanol": "Cuerpo Calloso",
+    "nombre_latin": "Corpus callosum",
+    "descripcion": "GRAN haz de fibras comisurales (sustancia blanca - BSC-WM) que CONECTA los dos hemisferios cerebrales. Ubicado en la base de la Fisura Interhemisférica (SUL-INTERHEM). PARTES: rostrum, genu, cuerpo, esplenio (MSC-CC-SPLEN).",
+    "funcion": "Comunicación e integración de información entre los hemisferios cerebrales.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "MSC-CC-SPLEN",
+    "nombre_espanol": "Esplenio del Cuerpo Calloso",
+    "nombre_latin": "Splenium corporis callosi",
+    "descripcion": "PARTE MÁS POSTERIOR y engrosada del Cuerpo Calloso (MSC-CC).",
+    "funcion": "Interconexión de áreas parietales y occipitales posteriores de ambos hemisferios.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "SUL-CC",
+    "nombre_espanol": "Surco del Cuerpo Calloso",
+    "nombre_latin": "Sulcus corporis callosi",
+    "descripcion": "SURCO que SEPARA el Cuerpo Calloso (MSC-CC) (inferior) del Giro Cingulado (GYR-CING) (superior).",
+    "funcion": "Delimitación anatómica.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "MSC-PAPEZ",
+    "nombre_espanol": "Circuito de Papez (Circuito Límbico Medial/Hipocampal)",
+    "nombre_latin": "Circuitus Papez",
+    "descripcion": "CIRCUITO neuronal fundamental para la memoria y emoción. Ruta clásica: Hipocampo (LIM-HIPP) -> Fórnix (LIM-FORNIX) -> Cuerpos Mamilares (LIM-MAM) -> Tracto Mamilotalámico (TRC-MAMTHAL) -> Núcleos Anteriores del Tálamo (NUC-THAL-ANT) -> Cíngulo (TRC-CING) -> Giro Cingulado (GYR-CING) -> (vía Giro Parahipocampal - GYR-PHIPP) -> Hipocampo (LIM-HIPP).",
+    "funcion": "Consolidación de memoria, procesamiento emocional.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "LIM-FIMBRIA",
+    "nombre_espanol": "Fimbria",
+    "nombre_latin": "Fimbria hippocampi",
+    "descripcion": "Banda de fibras (sustancia blanca - BSC-WM) que emerge del Hipocampo (LIM-HIPP). Se continúa como el Fórnix (LIM-FORNIX).",
+    "funcion": "Vía de salida principal de eferencias del hipocampo.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "LIM-FORNIX",
+    "nombre_espanol": "Fórnix",
+    "nombre_latin": "Fornix",
+    "descripcion": "Haz arqueado de fibras de sustancia blanca (BSC-WM) en forma de 'C'. PRINCIPAL vía eferente del Hipocampo (LIM-HIPP). CONECTA el hipocampo con los Cuerpos Mamilares (LIM-MAM) y otras estructuras.",
+    "funcion": "Transmisión de información relacionada con la memoria desde el hipocampo.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "LIM-MAM",
+    "nombre_espanol": "Cuerpos Mamilares",
+    "nombre_latin": "Corpora mamillaria",
+    "descripcion": "DOS pequeños núcleos redondeados en la base del cerebro, parte del hipotálamo posterior. Reciben aferencias del Fórnix (LIM-FORNIX).",
+    "funcion": "Estación de relevo en el Circuito de Papez (MSC-PAPEZ), implicados en la memoria (especialmente recuerdo).",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "TRC-MAMTHAL",
+    "nombre_espanol": "Tracto Mamilotalámico",
+    "nombre_latin": "Tractus mamillothalamicus",
+    "descripcion": "Haz de fibras que CONECTA los Cuerpos Mamilares (LIM-MAM) con los Núcleos Anteriores del Tálamo (NUC-THAL-ANT).",
+    "funcion": "Transmisión de información dentro del Circuito de Papez (MSC-PAPEZ).",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "NUC-THAL-ANT",
+    "nombre_espanol": "Núcleos Anteriores del Tálamo",
+    "nombre_latin": "Nuclei anteriores thalami",
+    "descripcion": "Grupo de núcleos en la parte anterior del Tálamo (NUC-THAL). Reciben aferencias del Tracto Mamilotalámico (TRC-MAMTHAL) y proyectan al Giro Cingulado (GYR-CING).",
+    "funcion": "Estación de relevo talámica en el Circuito de Papez (MSC-PAPEZ), implicados en memoria y alerta.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "NUC-THAL",
+    "nombre_espanol": "Tálamo",
+    "nombre_latin": "Thalamus",
+    "descripcion": "GRAN masa ovoide de sustancia gris (BSC-GM) en el centro del cerebro (parte del Diencéfalo - BSC-DIEN). PRINCIPAL estación de relevo para información sensorial (excepto olfato) hacia la corteza. También releva información motora y límbica.",
+    "funcion": "Relevo sensorial y motor, regulación de conciencia, sueño y alerta.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "SUL-INTERHEM",
+    "nombre_espanol": "Fisura Interhemisférica",
+    "nombre_latin": "Fissura longitudinalis cerebri",
+    "descripcion": "FISURA PROFUNDA que divide el cerebro en dos hemisferios (derecho e izquierdo). CONTIENE la hoz del cerebro y vasos sanguíneos.",
+    "funcion": "Separación física de los hemisferios cerebrales.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "VEN-LAT",
+    "nombre_espanol": "Ventrículos Laterales",
+    "nombre_latin": "Ventriculi laterales",
+    "descripcion": "DOS cavidades grandes llenas de líquido cefalorraquídeo (LCR), una en cada hemisferio cerebral. PARTE del sistema ventricular.",
+    "funcion": "Producción (plexos coroideos) y circulación de LCR.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "VEN-MONRO",
+    "nombre_espanol": "Forámenes Interventriculares (de Monro)",
+    "nombre_latin": "Foramina interventricularia (Monroi)",
+    "descripcion": "DOS orificios que CONECTAN cada Ventrículo Lateral (VEN-LAT) con el Tercer Ventrículo.",
+    "funcion": "Permiten el flujo de LCR desde los ventrículos laterales al tercer ventrículo.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "BSC-WM",
+    "nombre_espanol": "Sustancia Blanca",
+    "nombre_latin": "Substantia alba",
+    "descripcion": "Tejido nervioso compuesto principalmente por axones mielinizados. UBICADA bajo la corteza cerebral (CTX-CER) y rodeando los núcleos profundos. FORMA tractos que conectan diferentes áreas cerebrales.",
+    "funcion": "Transmisión de impulsos nerviosos entre regiones cerebrales.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "BSC-GM",
+    "nombre_espanol": "Sustancia Gris",
+    "nombre_latin": "Substantia grisea",
+    "descripcion": "Tejido nervioso compuesto principalmente por cuerpos neuronales, dendritas, axones no mielinizados y células gliales. FORMA la corteza cerebral (CTX-CER), los núcleos profundos (ganglios basales, tálamo - NUC-THAL, núcleos cerebelosos - NUC-CBM-DEEP) y la parte central de la médula espinal (BSC-SPINALCORD).",
+    "funcion": "Procesamiento de información, sinapsis.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "CBM-MAIN",
+    "nombre_espanol": "Cerebelo",
+    "nombre_latin": "Cerebellum",
+    "descripcion": "GRAN estructura del rombencéfalo (BSC-RHOMB) ubicada en la fosa craneal POSTERIOR (SPC-FOS-POST), debajo de los lóbulos occipital (LOB-OCC) y temporal (LOB-TEM). CONECTADO al tronco encefálico por los Pedúnculos Cerebelosos (CBM-PED). Posee DOS hemisferios (CBM-HEMI) y un Vermis central (CBM-VER). Superficie ALTAMENTE plegada (folias - CBM-FOLIA).",
+    "funcion": "Coordinación motora fina, equilibrio, postura, aprendizaje motor, posible rol en funciones cognitivas y emocionales.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "CBM-HEMI",
+    "nombre_espanol": "Hemisferios Cerebelosos",
+    "nombre_latin": "Hemispheria cerebelli",
+    "descripcion": "LAS DOS grandes masas laterales del Cerebelo (CBM-MAIN). CONECTADAS por el Vermis (CBM-VER).",
+    "funcion": "Control y coordinación de movimientos de las extremidades ipsilaterales.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "CBM-VER",
+    "nombre_espanol": "Vermis Cerebeloso",
+    "nombre_latin": "Vermis cerebelli",
+    "descripcion": "Zona estrecha y MEDIANA que CONECTA los dos Hemisferios Cerebelosos (CBM-HEMI). Dividido en varios lobulillos (CBM-VER-LOB).",
+    "funcion": "Control de movimientos del tronco, postura, locomoción, movimientos oculares.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "CBM-VER-LOB",
+    "nombre_espanol": "Lóbulos del Vermis (Língula, L. Central, Culmen, Declive, Folium, Tuber, Pirámide, Úvula, Nódulo)",
+    "nombre_latin": "Lobuli vermis (Lingula, Lobulus centralis, Culmen, Declive, Folium vermis, Tuber vermis, Pyramis vermis, Uvula vermis, Nodulus)",
+    "descripcion": "NUEVE (o diez) subdivisiones sagitales del Vermis Cerebeloso (CBM-VER), de anterior a posterior. Incluye Nódulo (CBM-NOD).",
+    "funcion": "Contribuyen a las funciones generales del vermis, con cierta especialización regional.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "CBM-LOB-ANT",
+    "nombre_espanol": "Lóbulo Anterior del Cerebelo",
+    "nombre_latin": "Lobus cerebelli anterior",
+    "descripcion": "Lóbulo SUPERIOR del cerebelo (CBM-MAIN). Ubicado ARRIBA de la Fisura Prima (CBM-FISS-PRI). Incluye los lobulillos I a V.",
+    "funcion": "Regulación del tono muscular, coordinación de movimientos de las extremidades (especialmente marcha).",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "CBM-LOB-POST",
+    "nombre_espanol": "Lóbulo Posterior del Cerebelo",
+    "nombre_latin": "Lobus cerebelli posterior",
+    "descripcion": "Lóbulo INFERIOR y MÁS GRANDE del cerebelo (CBM-MAIN). Ubicado DEBAJO de la Fisura Prima (CBM-FISS-PRI). Incluye los lobulillos VI a IX.",
+    "funcion": "Coordinación de movimientos voluntarios finos, planificación motora, aprendizaje motor.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "CBM-LOB-FLOCNOD",
+    "nombre_espanol": "Lóbulo Floculonodular",
+    "nombre_latin": "Lobus flocculonodularis",
+    "descripcion": "Lóbulo MÁS ANTIGUO (arquicerebelo) y pequeño del cerebelo (CBM-MAIN). Ubicado INFERIORMENTE. Compuesto por el Nódulo (CBM-NOD) (parte del vermis, lóbulo X) y los dos Flóculos (CBM-FLOC) (laterales). Separado del lóbulo posterior (CBM-LOB-POST) por la Fisura Posterolateral (CBM-FISS-POSTLAT).",
+    "funcion": "Mantenimiento del equilibrio, coordinación de movimientos oculares con movimientos de la cabeza (reflejo vestíbulo-ocular).",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "CBM-FLOC",
+    "nombre_espanol": "Flóculo",
+    "nombre_latin": "Flocculus",
+    "descripcion": "Pequeño lóbulo en la superficie anteroinferior de cada hemisferio cerebeloso (CBM-HEMI). PARTE del Lóbulo Floculonodular (CBM-LOB-FLOCNOD). CONECTADO al Nódulo (CBM-NOD).",
+    "funcion": "Equilibrio, control de movimientos oculares (junto con el nódulo). ÚNICA parte de la corteza cerebelosa que NO proyecta a los núcleos profundos (proyecta a núcleos vestibulares - NUC-VEST).",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "CBM-NOD",
+    "nombre_espanol": "Nódulo (Nodulus)",
+    "nombre_latin": "Nodulus",
+    "descripcion": "Porción MÁS INFERIOR y ANTERIOR del Vermis (CBM-VER) (Lóbulo X). PARTE del Lóbulo Floculonodular (CBM-LOB-FLOCNOD).",
+    "funcion": "Equilibrio, control de movimientos oculares (junto con los flóculos - CBM-FLOC).",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "CBM-FISS-PRI",
+    "nombre_espanol": "Fisura Prima del Cerebelo",
+    "nombre_latin": "Fissura prima cerebelli",
+    "descripcion": "FISURA profunda en la superficie superior del cerebelo (CBM-MAIN). SEPARA el Lóbulo Anterior (CBM-LOB-ANT) del Lóbulo Posterior (CBM-LOB-POST).",
+    "funcion": "Delimitación anatómica mayor.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "CBM-FISS-HOR",
+    "nombre_espanol": "Fisura Horizontal del Cerebelo",
+    "nombre_latin": "Fissura horizontalis cerebelli",
+    "descripcion": "GRAN fisura que rodea el cerebelo (CBM-MAIN) aproximadamente a mitad de altura, visible lateralmente.",
+    "funcion": "Delimitación anatómica.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "CBM-FISS-POSTLAT",
+    "nombre_espanol": "Fisura Posterolateral (o Posterior según texto)",
+    "nombre_latin": "Fissura posterolateralis",
+    "descripcion": "FISURA que separa el Lóbulo Floculonodular (CBM-LOB-FLOCNOD) del Lóbulo Posterior (CBM-LOB-POST) del cerebelo.",
+    "funcion": "Delimitación anatómica.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "CBM-FOLIA",
+    "nombre_espanol": "Folia Cerebelosa",
+    "nombre_latin": "Folia cerebelli",
+    "descripcion": "Pliegues estrechos y paralelos (similares a giros) en la superficie de la CORTEZA CEREBELOSA (CBM-CTX).",
+    "funcion": "Aumentan enormemente el área superficial de la corteza cerebelosa.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "CBM-CTX",
+    "nombre_espanol": "Corteza Cerebelosa",
+    "nombre_latin": "Cortex cerebelli",
+    "descripcion": "CAPA EXTERNA de sustancia gris (BSC-GM) del cerebelo (CBM-MAIN), formando las folias (CBM-FOLIA).",
+    "funcion": "Procesamiento de información para la coordinación motora y otras funciones cerebelosas.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "CBM-WM",
+    "nombre_espanol": "Sustancia Blanca Cerebelosa (Árbol de la Vida)",
+    "nombre_latin": "Corpus medullare cerebelli (Arbor vitae)",
+    "descripcion": "SUSTANCIA BLANCA (BSC-WM) interna del cerebelo (CBM-MAIN). Tiene una apariencia ramificada en cortes sagitales ('Árbol de la Vida'). CONTIENE fibras aferentes y eferentes, y los núcleos profundos (NUC-CBM-DEEP).",
+    "funcion": "Conducción de señales hacia y desde la corteza cerebelosa (CBM-CTX) y los núcleos profundos.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "NUC-CBM-DEEP",
+    "nombre_espanol": "Núcleos Profundos del Cerebelo (Dentado, Emboliforme, Globoso, Fastigio)",
+    "nombre_latin": "Nuclei cerebelli (dentatus, emboliformis, globosus, fastigii)",
+    "descripcion": "CUATRO pares de núcleos de sustancia gris (BSC-GM) incrustados en la sustancia blanca del cerebelo (CBM-WM). SON la principal vía de salida del cerebelo (excepto para el lóbulo floculonodular - CBM-LOB-FLOCNOD). DE lateral a medial: Dentado (NUC-CBM-DEN) (el más grande), Emboliforme (NUC-CBM-EMB), Globoso (NUC-CBM-GLOB), Fastigio (NUC-CBM-FAST).",
+    "funcion": "Transmiten la información procesada por la corteza cerebelosa (CBM-CTX) a otras partes del cerebro (tálamo - NUC-THAL, tronco encefálico). Dentado: planificación motora. Interpuestos (Emboliforme+Globoso): ejecución motora de extremidades. Fastigio: equilibrio, postura.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "NUC-CBM-DEN",
+    "nombre_espanol": "Núcleo Dentado",
+    "nombre_latin": "Nucleus dentatus",
+    "descripcion": "EL MÁS GRANDE y lateral de los núcleos profundos del cerebelo (NUC-CBM-DEEP). Tiene una forma arrugada característica.",
+    "funcion": "Planificación, inicio y control de movimientos voluntarios, especialmente de las extremidades. Posible rol en funciones cognitivas.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "NUC-CBM-EMB",
+    "nombre_espanol": "Núcleo Emboliforme",
+    "nombre_latin": "Nucleus emboliformis",
+    "descripcion": "Núcleo profundo del cerebelo (NUC-CBM-DEEP), MEDIAL al dentado (NUC-CBM-DEN). A menudo considerado junto con el globoso (NUC-CBM-GLOB) como 'núcleo interpuesto'.",
+    "funcion": "Regulación de movimientos en curso de las extremidades ipsilaterales.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "NUC-CBM-GLOB",
+    "nombre_espanol": "Núcleo Globoso",
+    "nombre_latin": "Nucleus globosus",
+    "descripcion": "Núcleo profundo del cerebelo (NUC-CBM-DEEP), MEDIAL al emboliforme (NUC-CBM-EMB). Compuesto por uno o más grupos celulares redondeados. A menudo considerado junto con el emboliforme como 'núcleo interpuesto'.",
+    "funcion": "Regulación de movimientos en curso de las extremidades ipsilaterales.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "NUC-CBM-FAST",
+    "nombre_espanol": "Núcleo Fastigio",
+    "nombre_latin": "Nucleus fastigii",
+    "descripcion": "EL MÁS MEDIAL de los núcleos profundos del cerebelo (NUC-CBM-DEEP), cerca del vermis (CBM-VER) y del techo del cuarto ventrículo (VEN-4TH).",
+    "funcion": "Control postural, equilibrio, movimientos oculares.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "CBM-PED",
+    "nombre_espanol": "Pedúnculos Cerebelosos (Superior, Medio, Inferior)",
+    "nombre_latin": "Pedunculi cerebellares (superior, medius, inferior)",
+    "descripcion": "TRES pares de grandes haces de sustancia blanca (BSC-WM) que CONECTAN el Cerebelo (CBM-MAIN) con el Tronco Encefálico: SUPERIOR (CBM-PED-SUP) (al mesencéfalo - BSC-MESEN, principalmente eferente), MEDIO (CBM-PED-MED) (a la protuberancia - BSC-PONS, principalmente aferente desde la protuberancia), INFERIOR (CBM-PED-INF) (a la médula oblongada - BSC-MEDOBL y médula espinal - BSC-SPINALCORD, mixto aferente/eferente).",
+    "funcion": "VÍAS DE ENTRADA Y SALIDA de información del cerebelo.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "CBM-PED-SUP",
+    "nombre_espanol": "Pedúnculo Cerebeloso Superior (Brachium Conjunctivum)",
+    "nombre_latin": "Pedunculus cerebellaris superior (Brachium conjunctivum)",
+    "descripcion": "CONECTA el cerebelo (CBM-MAIN) con el mesencéfalo (BSC-MESEN). PRINCIPAL vía EFERENTE de los núcleos profundos (NUC-CBM-DEEP) (excepto fastigio) hacia el tálamo (NUC-THAL) y corteza motora.",
+    "funcion": "Salida de información cerebelosa para la coordinación motora.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "CBM-PED-MED",
+    "nombre_espanol": "Pedúnculo Cerebeloso Medio (Brachium Pontis)",
+    "nombre_latin": "Pedunculus cerebellaris medius (Brachium pontis)",
+    "descripcion": "EL MÁS GRANDE de los pedúnculos cerebelosos (CBM-PED). CONECTA el cerebelo (CBM-MAIN) con la protuberancia (BSC-PONS). Contiene CASI EXCLUSIVAMENTE fibras AFERENTES desde los núcleos pontinos contralaterales (NUC-PONS) (información de la corteza cerebral).",
+    "funcion": "Entrada de información cortical (plan motor) al cerebelo.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "CBM-PED-INF",
+    "nombre_espanol": "Pedúnculo Cerebeloso Inferior (Cuerpo Restiforme y Yuxtarestiforme)",
+    "nombre_latin": "Pedunculus cerebellaris inferior (Corpus restiforme et juxtarestiforme)",
+    "descripcion": "CONECTA el cerebelo (CBM-MAIN) con la médula oblongada (BSC-MEDOBL) y la médula espinal (BSC-SPINALCORD). Contiene fibras AFERENTES (propioceptivas, vestibulares) y EFERENTES (a núcleos vestibulares - NUC-VEST). COMPUESTO por Cuerpo Restiforme (más grande, lateral) y Cuerpo Yuxtarestiforme (medial).",
+    "funcion": "Entrada de información sensorial (propiocepción, vestibular) y salida para control del equilibrio y postura.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "CBM-TONSIL",
+    "nombre_espanol": "Tonsila Cerebelosa (Amígdala Cerebelosa)",
+    "nombre_latin": "Tonsilla cerebelli",
+    "descripcion": "Lobulillo redondeado en la superficie INFERIOR de cada hemisferio cerebeloso (CBM-HEMI). Ubicada cerca del foramen magno. Se continúa medialmente con la Úvula (parte de CBM-VER-LOB) del vermis.",
+    "funcion": "Participa en la coordinación motora. CLÍNICAMENTE importante por riesgo de herniación a través del foramen magno.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "VEN-4TH",
+    "nombre_espanol": "Cuarto Ventrículo",
+    "nombre_latin": "Ventriculus quartus",
+    "descripcion": "Cavidad llena de LCR ubicada entre el tronco encefálico (protuberancia - BSC-PONS y médula oblongada - BSC-MEDOBL) por delante y el cerebelo (CBM-MAIN) por detrás. Techo formado por velos medulares (VEN-VEL-SUP, VEN-VEL-INF) y cerebelo.",
+    "funcion": "Circulación de LCR. Contiene aberturas (forámenes de Luschka y Magendie) hacia el espacio subaracnoideo.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "VEN-VEL-SUP",
+    "nombre_espanol": "Velo Medular Superior",
+    "nombre_latin": "Velum medullare superius",
+    "descripcion": "Fina lámina de sustancia blanca (BSC-WM) que forma la parte ANTEROSUPERIOR del techo del Cuarto Ventrículo (VEN-4TH). Se extiende entre los pedúnculos cerebelosos superiores (CBM-PED-SUP).",
+    "funcion": "Parte del techo del cuarto ventrículo.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "VEN-VEL-INF",
+    "nombre_espanol": "Velo Medular Inferior",
+    "nombre_latin": "Velum medullare inferius",
+    "descripcion": "Fina lámina (en parte tela coroidea) que forma la parte POSTEROINFERIOR del techo del Cuarto Ventrículo (VEN-4TH). Se extiende desde el nódulo (CBM-NOD) hacia los flóculos (CBM-FLOC).",
+    "funcion": "Parte del techo del cuarto ventrículo.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "SPC-CPA",
+    "nombre_espanol": "Fisura Cerebelopontina (Ángulo Pontocerebeloso)",
+    "nombre_latin": "Angulus pontocerebellaris",
+    "descripcion": "Espacio en forma de 'V' formado donde el cerebelo (CBM-MAIN) se une a la protuberancia (BSC-PONS) y al pedúnculo cerebeloso medio (CBM-PED-MED). CONTIENE nervios craneales importantes (VII, VIII) y vasos.",
+    "funcion": "Espacio anatómico clínicamente relevante (localización de tumores como schwannomas vestibulares).",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "BSC-PONS",
+    "nombre_espanol": "Protuberancia (Pons)",
+    "nombre_latin": "Pons",
+    "descripcion": "Parte del tronco encefálico ubicada entre el mesencéfalo (BSC-MESEN) (arriba) y la médula oblongada (BSC-MEDOBL) (abajo), y anterior al cerebelo (CBM-MAIN). Contiene núcleos pontinos (NUC-PONS) y tractos ascendentes/descendentes.",
+    "funcion": "Relevo de señales entre cerebro y cerebelo, control respiratorio, sueño, relevo sensorial.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "NUC-PONS",
+    "nombre_espanol": "Núcleos Pontinos (Griseum Pontis)",
+    "nombre_latin": "Nuclei pontis",
+    "descripcion": "Grupos de neuronas en la porción ventral (basilar) de la Protuberancia (BSC-PONS). Reciben aferencias de la corteza cerebral (fibras corticopontinas - TRC-CORTPONS) y proyectan al cerebelo contralateral (proyección pontocerebelosa - TRC-PONSCBM) vía pedúnculo cerebeloso medio (CBM-PED-MED).",
+    "funcion": "Relevo de información motora cortical hacia el cerebelo.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "TRC-CORTPONS",
+    "nombre_espanol": "Fibras Corticopontinas",
+    "nombre_latin": "Fibrae corticopontinae",
+    "descripcion": "Fibras descendentes desde la corteza cerebral (especialmente motora) hacia los núcleos pontinos ipsilaterales (NUC-PONS).",
+    "funcion": "Transmiten el plan motor desde la corteza a la protuberancia.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "TRC-PONSCBM",
+    "nombre_espanol": "Proyección Pontocerebelosa",
+    "nombre_latin": "Tractus pontocerebellaris",
+    "descripcion": "Fibras que se originan en los núcleos pontinos (NUC-PONS), cruzan la línea media y entran al cerebelo contralateral (CBM-MAIN) a través del pedúnculo cerebeloso medio (CBM-PED-MED).",
+    "funcion": "Transmiten información motora cortical (ya procesada en la protuberancia) al cerebelo.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "BSC-MEDOBL",
+    "nombre_espanol": "Médula Oblongada (Bulbo Raquídeo)",
+    "nombre_latin": "Medulla oblongata",
+    "descripcion": "Parte más inferior del tronco encefálico, conectando la protuberancia (BSC-PONS) (arriba) con la médula espinal (BSC-SPINALCORD) (abajo). Contiene centros vitales.",
+    "funcion": "Regulación de funciones autónomas vitales (respiración, ritmo cardíaco, presión arterial), reflejos (tos, vómito, deglución), paso de tractos ascendentes/descendentes.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "BSC-SPINALCORD",
+    "nombre_espanol": "Médula Espinal",
+    "nombre_latin": "Medulla spinalis",
+    "descripcion": "Estructura larga y cilíndrica del sistema nervioso central, extendiéndose desde la médula oblongada (BSC-MEDOBL) hacia abajo dentro del canal vertebral. CONECTA el cerebro con el resto del cuerpo.",
+    "funcion": "Conducción de señales sensoriales (ascendentes) y motoras (descendentes), centro de reflejos espinales.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "BSC-MESEN",
+    "nombre_espanol": "Mesencéfalo (Cerebro Medio)",
+    "nombre_latin": "Mesencephalon",
+    "descripcion": "Parte más superior del tronco encefálico, conectando la protuberancia (BSC-PONS) y el cerebelo (CBM-MAIN) con el diencéfalo (BSC-DIEN). CONECTADO al cerebelo por los pedúnculos cerebelosos superiores (CBM-PED-SUP).",
+    "funcion": "Control de movimientos oculares, procesamiento auditivo y visual (colículos), regulación del movimiento (sustancia negra).",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "BSC-DIEN",
+    "nombre_espanol": "Diencéfalo",
+    "nombre_latin": "Diencephalon",
+    "descripcion": "Parte del prosencéfalo (BSC-PROSEN) ubicada entre el telencéfalo (BSC-TELEN) y el mesencéfalo (BSC-MESEN). Incluye principalmente el Tálamo (NUC-THAL), Hipotálamo, Epitálamo y Subtálamo. CUBIERTO por los hemisferios cerebrales.",
+    "funcion": "Relevo sensorial y motor (Tálamo), regulación autónoma y endocrina (Hipotálamo), regulación circadiana (Epitálamo - glándula pineal).",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "BSC-TELEN",
+    "nombre_espanol": "Telencéfalo",
+    "nombre_latin": "Telencephalon",
+    "descripcion": "Parte más grande y superior del cerebro, derivada del prosencéfalo (BSC-PROSEN). Incluye los HEMISFERIOS CEREBRALES (corteza - CTX-CER, sustancia blanca subcortical - BSC-WM, ganglios basales).",
+    "funcion": "Funciones cognitivas superiores, procesamiento sensorial, control motor voluntario.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "BSC-PROSEN",
+    "nombre_espanol": "Prosencéfalo (Cerebro Anterior)",
+    "nombre_latin": "Prosencephalon",
+    "descripcion": "Una de las tres vesículas cerebrales primarias. Se divide en Telencéfalo (BSC-TELEN) y Diencéfalo (BSC-DIEN).",
+    "funcion": "Origen embrionario de las estructuras cerebrales superiores.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "BSC-RHOMB",
+    "nombre_espanol": "Rombencéfalo (Cerebro Posterior)",
+    "nombre_latin": "Rhombencephalon",
+    "descripcion": "Una de las tres vesículas cerebrales primarias. Se divide en Metencéfalo (BSC-METEN) (Protuberancia y Cerebelo) y Mielencéfalo (Médula Oblongada).",
+    "funcion": "Origen embrionario del tronco encefálico inferior y cerebelo.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "BSC-METEN",
+    "nombre_espanol": "Metencéfalo",
+    "nombre_latin": "Metencephalon",
+    "descripcion": "Parte superior del Rombencéfalo (BSC-RHOMB). Da origen a la PROTUBERANCIA (BSC-PONS) y al CEREBELO (CBM-MAIN).",
+    "funcion": "Origen embrionario de la protuberancia y cerebelo.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "NUC-VEST",
+    "nombre_espanol": "Núcleos Vestibulares",
+    "nombre_latin": "Nuclei vestibulares",
+    "descripcion": "Complejo de núcleos en la protuberancia (BSC-PONS) y médula oblongada (BSC-MEDOBL) que reciben información del oído interno (sistema vestibular) y del cerebelo (lóbulo floculonodular - CBM-LOB-FLOCNOD).",
+    "funcion": "Procesamiento de información sobre equilibrio y posición de la cabeza, control de postura y movimientos oculares.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "SPC-FOS-MED",
+    "nombre_espanol": "Fosa Craneal Media",
+    "nombre_latin": "Fossa cranii media",
+    "descripcion": "Una de las tres depresiones en la base interna del cráneo. ALOJA los lóbulos temporales (LOB-TEM), hipófisis.",
+    "funcion": "Compartimento óseo que protege parte del cerebro.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "SPC-FOS-POST",
+    "nombre_espanol": "Fosa Craneal Posterior",
+    "nombre_latin": "Fossa cranii posterior",
+    "descripcion": "La más posterior e inferior de las tres depresiones en la base interna del cráneo. ALOJA el cerebelo (CBM-MAIN) y el tronco encefálico.",
+    "funcion": "Compartimento óseo que protege el cerebelo y tronco encefálico.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+  },
+  {
+    "id_code": "CBM-FISS-TENT",
+    "nombre_espanol": "Fisura Tentorial",
+    "nombre_latin": "Fissura tentorialis",
+    "descripcion": "Fisura probablemente referida al espacio/fisura superior al cerebelo, inferior a la tienda del cerebelo.",
+    "funcion": "Delimitación anatómica superior del cerebelo.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+   },
+   {
+    "id_code": "CBM-FISS-SUBOCC",
+    "nombre_espanol": "Fisura Suboccipital",
+    "nombre_latin": "Fissura suboccipitalis",
+    "descripcion": "Fisura probablemente una fisura posteroinferior.",
+    "funcion": "Delimitación anatómica del cerebelo.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+   },
+   {
+    "id_code": "CBM-VER-DECLIVE",
+    "nombre_espanol": "Declive",
+    "nombre_latin": "Declive",
+    "descripcion": "Lobulillo VI del Vermis Cerebeloso (CBM-VER), parte del Lóbulo Posterior (CBM-LOB-POST).",
+    "funcion": "Coordinación motora.",
+    "referencia": "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
+   }
+]
