@@ -229,7 +229,7 @@ struct RelacionFilterChip: View {
             Text(texto)
                 .padding(.horizontal, 12)
                 .padding(.vertical, 6)
-                .background(isSelected ? Color.blue : Color(.systemGray6))
+                .background(isSelected ? Color.blue : Color.systemGray6)
                 .foregroundColor(isSelected ? .white : .primary)
                 .cornerRadius(15)
         }
@@ -306,7 +306,7 @@ struct RelacionRow: View {
             }
             .padding(.vertical, 6)
             .padding(.horizontal, 10)
-            .background(Color(.systemGray6).opacity(0.5))
+            .background(Color.systemGray6.opacity(0.5))
             .cornerRadius(8)
         }
         .buttonStyle(PlainButtonStyle())

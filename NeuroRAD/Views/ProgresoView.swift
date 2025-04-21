@@ -129,6 +129,7 @@ struct ProgresoView: View {
             }
             .navigationTitle("Tu Progreso")
             .toolbar {
+                #if os(iOS)
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: {
                         // Aquí se implementaría la exportación de datos
@@ -136,6 +137,15 @@ struct ProgresoView: View {
                         Image(systemName: "square.and.arrow.up")
                     }
                 }
+                #else
+                ToolbarItem(placement: .automatic) {
+                    Button(action: {
+                        // Aquí se implementaría la exportación de datos
+                    }) {
+                        Image(systemName: "square.and.arrow.up")
+                    }
+                }
+                #endif
             }
         }
     }
@@ -476,5 +486,477 @@ struct ProgresoView: View {
 struct ProgresoView_Previews: PreviewProvider {
     static var previews: some View {
         ProgresoView(dataManager: NeuroDataManager())
+    }
+}
+
+import SwiftUI
+
+struct ProgresoView: View {
+    @ObservedObject var dataManager: NeuroDataManager
+    @State private var filtroSistema: SistemaAnatomico?
+    @State private var filtroCategoria: CategoriasAnatomicas?
+    @State private var textoFiltro: String = ""
+    @State private var showingFilterSheet = false
+    @State private var mostrarSoloCompletados = false
+    
+    // Colores para los niveles de progreso
+    private let colorEstado: [EstadoEstudio: Color] = [
+        .noIniciado: .red,
+        .enProgreso: .orange,
+        .completado: .green
+    ]
+    
+    var body: some View {
+        NavigationView {
+            VStack(spacing: 0) {
+                // Barra de búsqueda
+                SearchBar(text: $textoFiltro, placeholder: "Buscar estructura...")
+                    .padding(.horizontal)
+                    .padding(.top, 8)
+                
+                // Filtros activos
+                HStack {
+                    if filtroSistema != nil || filtroCategoria != nil || mostrarSoloCompletados {
+                        ScrollView(.horizontal, showsIndicators: false) {
+                            HStack(spacing: 8) {
+                                if let sistema = filtroSistema {
+                                    FilterChip(text: sistema.nombreCompleto) {
+                                        withAnimation { filtroSistema = nil }
+                                    }
+                                }
+                                
+                                if let categoria = filtroCategoria {
+                                    FilterChip(text: CategoriasAnatomicas.nombreDescriptivo(categoria)) {
+                                        withAnimation { filtroCategoria = nil }
+                                    }
+                                }
+                                
+                                if mostrarSoloCompletados {
+                                    FilterChip(text: "Completados") {
+                                        withAnimation { mostrarSoloCompletados = false }
+                                    }
+                                }
+                                
+                                Button(action: {
+                                    withAnimation {
+                                        filtroSistema = nil
+                                        filtroCategoria = nil
+                                        mostrarSoloCompletados = false
+                                    }
+                                }) {
+                                    Text("Limpiar filtros")
+                                        .font(.caption)
+                                        .foregroundColor(.blue)
+                                }
+                                .padding(.leading, 4)
+                            }
+                            .padding(.vertical, 8)
+                            .padding(.horizontal)
+                        }
+                    } else {
+                        HStack {
+                            Text("Sin filtros activos")
+                                .font(.caption)
+                                .foregroundColor(.secondary)
+                            
+                            Spacer()
+                        }
+                        .padding(.vertical, 8)
+                        .padding(.horizontal)
+                    }
+                }
+                
+                // Estadísticas de progreso
+                if !filtradoActivo() {
+                    ProgresoStatsView(dataManager: dataManager)
+                        .padding(.horizontal)
+                        .padding(.vertical, 12)
+                }
+                
+                // Lista de estructuras
+                List {
+                    ForEach(nodosFiltrados()) { nodo in
+                        NavigationLink(destination: EstructuraDetailView(nodo: nodo, dataManager: dataManager)) {
+                            EstadoEstudioRow(nodo: nodo, dataManager: dataManager)
+                        }
+                    }
+                }
+                #if os(macOS)
+                .listStyle(.inset)
+                #else
+                .listStyle(.insetGrouped)
+                #endif
+            }
+            .navigationTitle("Progreso de Estudio")
+            .toolbar {
+                #if os(macOS)
+                ToolbarItem {
+                #else
+                ToolbarItem(placement: .navigationBarTrailing) {
+                #endif
+                    Button(action: { showingFilterSheet = true }) {
+                        Label("Filtrar", systemImage: "line.3.horizontal.decrease.circle")
+                    }
+                }
+            }
+            .sheet(isPresented: $showingFilterSheet) {
+                FiltrosView(
+                    filtroSistema: $filtroSistema,
+                    filtroCategoria: $filtroCategoria,
+                    mostrarSoloCompletados: $mostrarSoloCompletados
+                )
+                .environmentObject(dataManager)
+            }
+        }
+    }
+    
+    // Determina si hay filtros activos
+    private func filtradoActivo() -> Bool {
+        return filtroSistema != nil || filtroCategoria != nil || !textoFiltro.isEmpty || mostrarSoloCompletados
+    }
+    
+    // Filtra los nodos según los criterios
+    private func nodosFiltrados() -> [NodoAnatomico] {
+        var nodos = Array(dataManager.nodos.values)
+        
+        // Filtro por texto
+        if !textoFiltro.isEmpty {
+            nodos = nodos.filter {
+                $0.nombreEspanol.localizedCaseInsensitiveContains(textoFiltro) ||
+                $0.nombreLatin.localizedCaseInsensitiveContains(textoFiltro) ||
+                $0.idCode.localizedCaseInsensitiveContains(textoFiltro)
+            }
+        }
+        
+        // Filtro por sistema
+        if let sistema = filtroSistema {
+            nodos = nodos.filter { $0.sistema == sistema }
+        }
+        
+        // Filtro por categoría
+        if let categoria = filtroCategoria {
+            nodos = nodos.filter { $0.categoria == categoria }
+        }
+        
+        // Filtro por completados
+        if mostrarSoloCompletados {
+            nodos = nodos.filter { dataManager.estadoEstudio(codigo: $0.codigo) == .completado }
+        }
+        
+        return nodos.sorted { $0.nombreEspanol < $1.nombreEspanol }
+    }
+}
+
+// Vista con estadísticas de progreso
+struct ProgresoStatsView: View {
+    @ObservedObject var dataManager: NeuroDataManager
+    
+    var body: some View {
+        VStack(spacing: 12) {
+            // Progreso general
+            HStack {
+                Text("Progreso general")
+                    .font(.headline)
+                
+                Spacer()
+                
+                Text("\(porcentajeProgreso())%")
+                    .font(.headline)
+                    .foregroundColor(.blue)
+            }
+            
+            // Barra de progreso
+            GeometryReader { geometry in
+                HStack(spacing: 3) {
+                    // Completados
+                    Rectangle()
+                        .fill(Color.green)
+                        .frame(width: calcularAnchoBar(count: contarPorEstado(.completado), totalWidth: geometry.size.width))
+                    
+                    // En progreso
+                    Rectangle()
+                        .fill(Color.orange)
+                        .frame(width: calcularAnchoBar(count: contarPorEstado(.enProgreso), totalWidth: geometry.size.width))
+                    
+                    // No iniciados
+                    Rectangle()
+                        .fill(Color.systemGray5)
+                        .frame(width: calcularAnchoBar(count: contarPorEstado(.noIniciado), totalWidth: geometry.size.width))
+                }
+            }
+            .frame(height: 12)
+            .clipShape(RoundedRectangle(cornerRadius: 6))
+            
+            // Leyenda
+            HStack(spacing: 16) {
+                LeyendaItem(color: .green, text: "Completados: \(contarPorEstado(.completado))")
+                LeyendaItem(color: .orange, text: "En progreso: \(contarPorEstado(.enProgreso))")
+                LeyendaItem(color: .red, text: "No iniciados: \(contarPorEstado(.noIniciado))")
+            }
+            .font(.caption)
+            .padding(.top, 4)
+        }
+        .padding()
+        .background(Color.systemGray6)
+        .cornerRadius(12)
+    }
+    
+    // Calcula el porcentaje de progreso
+    private func porcentajeProgreso() -> Int {
+        let total = dataManager.nodos.count
+        if total == 0 { return 0 }
+        
+        let completados = contarPorEstado(.completado)
+        let enProgreso = contarPorEstado(.enProgreso)
+        
+        // Cada en progreso cuenta como medio completado
+        let ponderado = completados + (enProgreso / 2)
+        return Int((Double(ponderado) / Double(total)) * 100)
+    }
+    
+    // Cuenta los nodos por estado
+    private func contarPorEstado(_ estado: EstadoEstudio) -> Int {
+        return dataManager.nodos.values.filter { dataManager.estadoEstudio(codigo: $0.codigo) == estado }.count
+    }
+    
+    // Calcula el ancho proporcional de cada segmento de la barra
+    private func calcularAnchoBar(count: Int, totalWidth: CGFloat) -> CGFloat {
+        let total = dataManager.nodos.count
+        if total == 0 { return 0 }
+        
+        let proporcion = CGFloat(count) / CGFloat(total)
+        return totalWidth * proporcion
+    }
+}
+
+// Item de leyenda para las estadísticas
+struct LeyendaItem: View {
+    let color: Color
+    let text: String
+    
+    var body: some View {
+        HStack(spacing: 4) {
+            Circle()
+                .fill(color)
+                .frame(width: 8, height: 8)
+            
+            Text(text)
+        }
+    }
+}
+
+// Fila para mostrar estado de estudio de un nodo
+struct EstadoEstudioRow: View {
+    let nodo: NodoAnatomico
+    @ObservedObject var dataManager: NeuroDataManager
+    
+    var body: some View {
+        HStack {
+            VStack(alignment: .leading, spacing: 4) {
+                Text(nodo.nombreEspanol)
+                    .font(.system(size: 16, weight: .medium))
+                
+                Text(nodo.nombreLatin)
+                    .font(.system(size: 14, weight: .regular))
+                    .italic()
+                    .foregroundColor(.secondary)
+            }
+            
+            Spacer()
+            
+            EstadoIndicator(estado: dataManager.estadoEstudio(codigo: nodo.codigo))
+        }
+        .padding(.vertical, 4)
+    }
+}
+
+// Indicador visual de estado de estudio
+struct EstadoIndicator: View {
+    let estado: EstadoEstudio
+    
+    var body: some View {
+        HStack {
+            Image(systemName: iconoEstado)
+                .foregroundColor(.white)
+                .background(
+                    Circle()
+                        .fill(colorEstado)
+                        .frame(width: 24, height: 24)
+                )
+            
+            Text(textoEstado)
+                .font(.system(size: 14))
+                .foregroundColor(.secondary)
+        }
+    }
+    
+    private var iconoEstado: String {
+        switch estado {
+        case .noIniciado: return "xmark"
+        case .enProgreso: return "ellipsis"
+        case .completado: return "checkmark"
+        }
+    }
+    
+    private var colorEstado: Color {
+        switch estado {
+        case .noIniciado: return .red
+        case .enProgreso: return .orange
+        case .completado: return .green
+        }
+    }
+    
+    private var textoEstado: String {
+        switch estado {
+        case .noIniciado: return "No iniciado"
+        case .enProgreso: return "En progreso"
+        case .completado: return "Completado"
+        }
+    }
+}
+
+// Vista para filtros
+struct FiltrosView: View {
+    @Environment(\.presentationMode) var presentationMode
+    @EnvironmentObject var dataManager: NeuroDataManager
+    @Binding var filtroSistema: SistemaAnatomico?
+    @Binding var filtroCategoria: CategoriasAnatomicas?
+    @Binding var mostrarSoloCompletados: Bool
+    
+    var body: some View {
+        NavigationView {
+            List {
+                // Sección de filtro por sistemas
+                Section(header: Text("Sistemas anatómicos")) {
+                    Button("Todos los sistemas") {
+                        filtroSistema = nil
+                        presentationMode.wrappedValue.dismiss()
+                    }
+                    
+                    ForEach(SistemaAnatomico.allCases, id: \.self) { sistema in
+                        Button(action: {
+                            filtroSistema = sistema
+                            presentationMode.wrappedValue.dismiss()
+                        }) {
+                            HStack {
+                                Text(sistema.nombreCompleto)
+                                Spacer()
+                                if filtroSistema == sistema {
+                                    Image(systemName: "checkmark")
+                                        .foregroundColor(.blue)
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                // Sección de filtro por categorías
+                Section(header: Text("Categorías anatómicas")) {
+                    Button("Todas las categorías") {
+                        filtroCategoria = nil
+                        presentationMode.wrappedValue.dismiss()
+                    }
+                    
+                    ForEach(CategoriasAnatomicas.allCases, id: \.self) { categoria in
+                        Button(action: {
+                            filtroCategoria = categoria
+                            presentationMode.wrappedValue.dismiss()
+                        }) {
+                            HStack {
+                                Text(CategoriasAnatomicas.nombreDescriptivo(categoria))
+                                Spacer()
+                                if filtroCategoria == categoria {
+                                    Image(systemName: "checkmark")
+                                        .foregroundColor(.blue)
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                // Sección de filtro por estado
+                Section(header: Text("Estado de estudio")) {
+                    Toggle("Mostrar solo completados", isOn: $mostrarSoloCompletados)
+                }
+            }
+            .listStyle(.inset)
+            .navigationTitle("Filtros")
+            .toolbar {
+                ToolbarItem {
+                    Button("Cerrar") {
+                        presentationMode.wrappedValue.dismiss()
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Componente de filtro en forma de chip
+struct FilterChip: View {
+    let text: String
+    let onRemove: () -> Void
+    
+    var body: some View {
+        HStack(spacing: 4) {
+            Text(text)
+                .font(.caption)
+                .padding(.leading, 8)
+            
+            Button(action: onRemove) {
+                Image(systemName: "xmark.circle.fill")
+                    .font(.caption)
+            }
+            .padding(.trailing, 6)
+        }
+        .padding(.vertical, 4)
+        .background(
+            Capsule()
+                .fill(Color.blue.opacity(0.15))
+        )
+    }
+}
+
+// Componente de barra de búsqueda
+struct SearchBar: View {
+    @Binding var text: String
+    var placeholder: String = "Buscar..."
+    
+    var body: some View {
+        HStack {
+            Image(systemName: "magnifyingglass")
+                .foregroundColor(.secondary)
+            
+            TextField(placeholder, text: $text)
+                .disableAutocorrection(true)
+            
+            if !text.isEmpty {
+                Button(action: {
+                    text = ""
+                }) {
+                    Image(systemName: "xmark.circle.fill")
+                        .foregroundColor(.secondary)
+                }
+            }
+        }
+        .padding(8)
+        .background(
+            RoundedRectangle(cornerRadius: 10)
+                .fill(Color.systemGray6)
+        )
+    }
+}
+
+// Componente visual para metadata
+struct MetadataPill: View {
+    let text: String
+    
+    var body: some View {
+        Text(text)
+            .font(.caption)
+            .padding(.horizontal, 8)
+            .padding(.vertical, 4)
+            .background(Color.blue.opacity(0.15))
+            .cornerRadius(8)
     }
 }

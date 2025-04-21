@@ -86,6 +86,8 @@ struct EstructuraDetailView: View {
                                 .font(.footnote)
                                 .fixedSize(horizontal: false, vertical: true)
                         }
+                    default:
+                        EmptyView()
                     }
                 }
                 
@@ -93,7 +95,9 @@ struct EstructuraDetailView: View {
             }
             .padding()
         }
+        #if os(iOS)
         .navigationBarTitleDisplayMode(.inline)
+        #endif
         .toolbar {
             ToolbarItem(placement: .principal) {
                 Text(estructura.codigo)
@@ -189,23 +193,29 @@ struct MetadataPill: View {
     }
 }
 
-struct EstructuraDetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        // Crear una estructura de prueba para la vista previa
-        let estructuraPrueba = NodoAnatomico(
-            codigo: "NA-SC-SG-CTX-CerebralCortex-001",
-            idCode: "CTX-CRB",
-            clasificacion: "CORT",
-            nombreEspanol: "Corteza Cerebral",
-            nombreLatin: "Cortex cerebri",
-            descripcion: "Parte del telencéfalo que cubre las estructuras diencefálicas más profundas del prosencéfalo en cada hemisferio cerebral.",
-            funciones: ["Base para la localización de lesiones y comprensión de implicaciones funcionales en neuroimagen.",
-                       "Implicada en funciones cognitivas, emocionales y conductuales de orden superior."],
-            referencia: "Anatomy of the Cerebral Cortex, Lobes, and Cerebellum"
-        )
-        
-        return NavigationView {
-            EstructuraDetailView(estructura: estructuraPrueba, dataManager: NeuroDataManager())
-        }
+// Extender Color para compatibilidad entre macOS e iOS
+extension Color {
+    static var systemBackground: Color {
+        #if os(macOS)
+        return Color(NSColor.windowBackgroundColor)
+        #else
+        return Color(.systemBackground)
+        #endif
+    }
+    
+    static var systemGray5: Color {
+        #if os(macOS)
+        return Color(NSColor.controlBackgroundColor)
+        #else
+        return Color(.systemGray5)
+        #endif
+    }
+    
+    static var systemGray6: Color {
+        #if os(macOS)
+        return Color(NSColor.controlBackgroundColor).opacity(0.8)
+        #else
+        return Color(.systemGray6)
+        #endif
     }
 }
